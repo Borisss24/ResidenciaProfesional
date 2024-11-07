@@ -88,3 +88,32 @@ function goBack() {
 function resetChatbot() {
     goBack(); // Regresar a las opciones al cerrar
 }
+// Mostrar/Ocultar el primer PDF y su información
+document.getElementById('showPdfButton').addEventListener('click', function() {
+    const pdfContainer1 = document.getElementById('pdfContainer1');
+    const pdfViewer1 = pdfContainer1.querySelector('.pdf-viewer');
+    const additionalInfo1 = pdfContainer1.querySelector('.additional-info');
+
+    if (pdfViewer1.style.display === 'none') {
+        pdfViewer1.style.display = 'block';  // Muestra el PDF
+        additionalInfo1.style.display = 'block';  // Muestra la información adicional
+    } else {
+        pdfViewer1.style.display = 'none';  // Oculta el PDF
+        additionalInfo1.style.display = 'none';  // Oculta la información adicional
+    }
+});
+
+// Mostrar/Ocultar el segundo PDF y su información
+document.getElementById('showPdfButton2').addEventListener('click', function() {
+    const pdfContainer2 = document.getElementById('pdfContainer2');
+    const pdfViewer2 = pdfContainer2.querySelector('.pdf-viewer');
+    const additionalInfo2 = pdfContainer2.querySelector('.additional-info');
+
+    if (pdfViewer2.style.display === 'none') {
+        pdfViewer2.style.display = 'block';  // Muestra el PDF
+        additionalInfo2.style.display = 'block';  // Muestra la información adicional
+    } else {
+        pdfViewer2.style.display = 'none';  // Oculta el PDF
+        additionalInfo2.style.display = 'none';  // Oculta la información adicional
+    }
+});
