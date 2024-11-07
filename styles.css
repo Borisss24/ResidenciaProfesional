@@ -298,6 +298,38 @@ body {
 .download-section li {
     margin: 5px 0; /* Espacio entre descargas */
 }
+/* Estilo para las descargas */
+.download-section {
+    margin-top: 20px;
+}
+
+.download-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.download-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.download-section li {
+    margin: 5px 0;
+}
+
+/* Centrar el iframe en su contenedor */
+iframe {
+    display: block;        /* Hace que el iframe sea un bloque */
+    margin: 0 auto;        /* Centra el iframe en su contenedor */
+    border: 1px solid #ccc; /* Opcional: añade un borde alrededor del iframe */
+    border-radius: 8px;    /* Opcional: redondea los bordes del iframe */
+}
+
+/* Asegurarse de que el contenedor del PDF también esté centrado */
+.tab-item {
+    text-align: justify;    /* Centra el contenido dentro de la tab-item */
+}
+
 
 /* Estilos de consulta para dispositivos móviles */
 @media (max-width: 600px) {
@@ -330,4 +362,76 @@ body {
     #backButton {
         padding: 6px 10px; /* Espaciado más pequeño para móviles */
     }
+}
+/* Opcional: para un mejor control del contenedor */
+.download-container {
+    text-align:justify;    /* Centra los elementos dentro de este contenedor */
+    margin-top: 10px;      /* Ajuste opcional del margen */
+}
+
+
+
+/* Contenedor principal del PDF y la información adicional */
+.pdf-section {
+    margin: 20px; /* Espacio superior */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo para centrar el botón */
+#showPdfButton {
+    display: block;
+    margin: 0 auto 20px; /* Centra el botón y agrega margen inferior */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #003366; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+#showPdfButton:hover {
+    background-color: #002244; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilo para el contenedor del PDF y la información adicional */
+.pdf-container {
+    display: flex; /* Usar flexbox para alinear el PDF y la información adicional en fila */
+    justify-content: space-between; /* Espacio entre el PDF y la información adicional */
+    align-items: flex-start; /* Alinea al principio en vertical */
+}
+
+/* Estilo para la visualización del PDF */
+.pdf-viewer {
+    flex:content; /* Toma la mitad del ancho disponible */
+    margin-right: 10px; /* Espacio entre el PDF y la información adicional */
+    margin-left: 10px;
+}
+
+/* Contenedor de la información adicional */
+.additional-info {
+    flex: 1; /* Toma la otra mitad del ancho */
+    color: #333; /* Color de texto */
+}
+
+.additional-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.additional-info p {
+    font-size: 1rem;
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+.additional-info a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.additional-info a:hover {
+    color: #002244; /* Color más oscuro cuando se pasa el ratón */
 }
