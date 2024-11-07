@@ -60,6 +60,8 @@
                 <div id="step1" class="tab-item active">
                     <h3>Revisión de Requisitos</h3>
                     <p>Consulta los requisitos y verifica que cumples con todos los criterios necesarios para iniciar tu residencia profesional.</p>
+                    <!-- Incluir el PDF embebido -->
+                    <iframe src="documentos/requisitos.pdf" width="600" height="400"></iframe>
                     <div class="download-container">
                         <a href="documentos/requisitos.pdf" class="download" download>
                             <img src="imagenes/pdfD.png" alt="(Descargar Requisitos)" style="width: 32px; height: 32px; vertical-align: middle;">
@@ -70,6 +72,8 @@
                 <div id="step2" class="tab-item">
                     <h3>Inscripción en el Proceso</h3>
                     <p>Completa el formulario de inscripción y entrega los documentos solicitados en la coordinación de residencias.</p>
+                    <!-- Incluir el PDF embebido -->
+                    <iframe src="documentos/inscripcion.pdf" width="600" height="400"></iframe>
                     <div class="download-container">
                         <a href="documentos/inscripcion.pdf" class="download" download>
                             <img src="imagenes/pdfD.png" alt="(Descargar Formulario de Inscripción)" style="width: 32px; height: 32px; vertical-align: middle;">
@@ -80,6 +84,8 @@
                 <div id="step3" class="tab-item">
                     <h3>Asignación de Asesor</h3>
                     <p>Una vez aprobada tu inscripción, se te asignará un asesor académico para guiarte en tu proyecto.</p>
+                    <!-- Incluir el PDF embebido -->
+                    <iframe src="documentos/asesor.pdf" width="600" height="400"></iframe>
                     <div class="download-container">
                         <a href="documentos/asesor.pdf" class="download" download>
                             <img src="imagenes/pdfD.png" alt="(Descargar Información del Asesor)" style="width: 32px; height: 32px; vertical-align: middle;">
@@ -90,6 +96,8 @@
                 <div id="step4" class="tab-item">
                     <h3>Desarrollo del Proyecto</h3>
                     <p>Desarrolla tu proyecto de residencia con la supervisión de tu asesor y de acuerdo a los lineamientos establecidos.</p>
+                    <!-- Incluir el PDF embebido -->
+                    <iframe src="documentos/desarrollo.pdf" width="600" height="400"></iframe>
                     <div class="download-container">
                         <a href="documentos/desarrollo.pdf" class="download" download>
                             <img src="imagenes/pdfD.png" alt="(Descargar Guía de Desarrollo)" style="width: 32px; height: 32px; vertical-align: middle;">
@@ -100,6 +108,8 @@
                 <div id="step5" class="tab-item">
                     <h3>Evaluación Final</h3>
                     <p>Presenta tu informe final y defiende tu proyecto ante un jurado evaluador.</p>
+                    <!-- Incluir el PDF embebido -->
+                    <iframe src="documentos/evaluacion.pdf" width="600" height="400"></iframe>
                     <div class="download-container">
                         <a href="documentos/evaluacion.pdf" class="download" download>
                             <img src="imagenes/pdfD.png" alt="(Descargar Lineamientos de Evaluación)" style="width: 32px; height: 32px; vertical-align: middle;">
@@ -109,10 +119,20 @@
                 </div>
             </div>
         </div>   
-         
+        <div class="pdf-section">
+            <button id="showPdfButton">Mostrar PDF 1</button>
+            <div id="pdfContainer1" class="pdf-container">
+                <iframe src="ORGINAL.pdf" class="pdf-viewer" style="display: none;" width="600" height="400"></iframe>
+                <div class="additional-info" style="display: none;">
+                    <p>Información adicional sobre el primer PDF</p>
+                    <a href="link_to_more_info" target="_blank">Más información</a>
+                </div>
+            </div>
+        </div>
+        
+      
     </main>
-
-    <!-- Contenedor del avatar y el mensaje de ayuda -->
+     <!-- Contenedor del avatar y el mensaje de ayuda -->
     <div class="chatbot-trigger" id="chatbotTrigger">
         <div class="chatbot-avatar">
             <img src="imagenes/halcon.png" alt="Volti"> <!-- Esta parte se mantiene igual -->
